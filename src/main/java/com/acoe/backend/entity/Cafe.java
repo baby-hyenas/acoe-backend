@@ -39,19 +39,13 @@ public class Cafe extends BaseEntity {
     @Column(name = "road_addr", length = 200)
     private String roadAddr;
 
-    @Column(name = "road_post_no", length = 30)
-    private String roadPostNo;
-
     @Column(name = "x")
-    @Digits(integer = 3, fraction = 6)
+    @Digits(integer = 6, fraction = 3)
     private BigDecimal x;
 
     @Column(name = "y")
-    @Digits(integer = 3, fraction = 6)
+    @Digits(integer = 6, fraction = 3)
     private BigDecimal y;
-
-    @Column(name = "ref_no", length = 50)
-    private String refNo;   // 공공데이터 참조 번호(관리 번호)
 
     @Column(name = "discountAmt")
     private Long discountAmt;
@@ -79,10 +73,8 @@ public class Cafe extends BaseEntity {
                 .dtlStateCd(dto.getDtlStateCd())
                 .telNo(dto.getTelNo())
                 .roadAddr(dto.getRoadAddr())
-                .roadPostNo(dto.getRoadPostNo())
                 .x(dto.getX())
                 .y(dto.getY())
-                .refNo(dto.getRefNo())
                 .appOrderYn(dto.getAppOrderYn())
                 .kioskYn(dto.getKioskYn())
                 .useYn(dto.getUseYn())

@@ -16,11 +16,9 @@ public class CafeDto extends BaseDto {
     private Long dtlStateCd;
     private String telNo;
     private String roadAddr;
-    private String roadPostNo;
     private BigDecimal x;
     private BigDecimal y;
     private Long discountAmt;
-    private String refNo;
     private Boolean appOrderYn;
     private Boolean kioskYn;
     private Boolean useYn;
