@@ -1,14 +1,17 @@
-package com.acoe.backend.dto;
+package com.acoe.backend.resource;
+
+import com.acoe.backend.dto.BaseDto;
+import com.acoe.backend.dto.MenuDto;
+import lombok.Data;
 
 import java.math.BigDecimal;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-
 import java.util.List;
 
-@EqualsAndHashCode(callSuper = true)
+/**
+ * A Resource for the  Cafe entity
+ */
 @Data
-public class CafeDto extends BaseDto {
+public class CafeResource extends BaseDto {
     private Long cafeId;
     private String cafeNm;
     private Long areaCd;
@@ -24,7 +27,6 @@ public class CafeDto extends BaseDto {
     private Boolean appOrderYn;
     private Boolean kioskYn;
     private Boolean useYn;
-    private FranchiseDto franchiseDto;
-    private Long franchiseId;
+    private FranchiseResource franchise;
     private List<MenuDto> menuList;
 }
