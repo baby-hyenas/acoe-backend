@@ -71,4 +71,5 @@ public class CafeService {
         cafeDto.setMenuList(menuDtos);
         return cafeDto;
     }
+
 }
